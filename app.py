@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 # Funktion zum Extrahieren der Daten von der Energy-Charts Website
 def extract_data():
     # URL der Energy-Charts Seite
-    url = "https://www.energy-charts.info/charts/market_values/chart.htm?l=de&c=DE&legendItems=0xi0"
+    url = "https://www.netztransparenz.de/de-de/Erneuerbare-Energien-und-Umlagen/EEG/Transparenzanforderungen/Marktprämie/Marktwertübersicht"
 
     # HTTP-Anfrage an die Webseite
     response = requests.get(url)
