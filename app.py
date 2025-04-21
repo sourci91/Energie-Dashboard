@@ -13,7 +13,7 @@ df = pd.read_csv(url, sep=';', encoding='latin1', skiprows=5)
 st.write(df.columns)
 
 # Nur Solar und relevante Spalten filtern
-df = df[['Monat', 'Jan 2025']]
+df = df[['Monat', '0.9']]
 df['Monat'] = pd.to_datetime(df['Monat'], format='%b %Y')
 df.set_index('Monat', inplace=True)
 df.sort_index(inplace=True)
