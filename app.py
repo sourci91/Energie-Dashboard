@@ -11,7 +11,7 @@ url = "https://raw.githubusercontent.com/sourci91/Energie-Dashboard/refs/heads/m
 df = pd.read_csv(url, sep=';', encoding='latin1', skiprows=5)
 
 # Nur Solar und relevante Spalten filtern
-df = df[['Monat', 'Marktwert Solar [ct/kWh]']]
+df = df[['Monat', 'MW Solar']]
 df['Monat'] = pd.to_datetime(df['Monat'], format='%b %Y')
 df.set_index('Monat', inplace=True)
 df.sort_index(inplace=True)
