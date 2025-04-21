@@ -18,3 +18,5 @@ df.sort_index(inplace=True)
 
 # Darstellung
 st.line_chart(df['Marktwert Solar [ct/kWh]'])
+
+st.write(df.columns)
